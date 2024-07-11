@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Changada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: yellow;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: yellow;
+            text-decoration: none;
+            padding: 1em;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .menu-section {
+            margin-bottom: 2em;
+        }
+
+        .menu-section h3 {
+            color: yellow;
+            font-size: 2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.5em 0;
+            font-size: 1.2em;
+        }
+
+        .product-name {
+            color: yellow;
+            font-size: 1.5em;
+        }
+
+        .ingredients {
+            color: white;
+            font-size: 1em;
+        }
+
+        .price {
+            color: #FFD700;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        form input, form textarea {
+            background-color: #333;
+            color: white;
+            border: 1px solid #575757;
+        }
+
+        form button {
+            background-color: yellow;
+            color: #333;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #E5E55E;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #222;
+            color: yellow;
+        }
+
+        .menu-images img {
+            width: 100%;
+            max-width: 400px;
+            margin: 0.5em;
+        }
+
+        .menu-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Changada</h1>
+        <p>Comida Callejera</p>
+        <p>Ubicación: Quinta Priv. Perlillas 732, C.P. 55710, Villa de las Flores, San Francisco Coacalco</p>
+        <p>Contacto: 55 7797 3037 - David Arturo Gutiérrez Durán</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#ordenar">Ordenar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu">
+        <h2>Menú</h2>
+        <div class="menu-section">
+            <h3>Hamburguesas</h3>
+            <ul>
+                <li>
+                    <span class="product-name">Abdu burger</span>
+                    <br>
+                    <span class="ingredients">Carne, lechuga, cebolla, jitomate, Queso amarillo</span>
+                    <br>
+                    <span class="price">$43</span>
+                </li>
+                <li>
+                    <span class="product-name">Hasbulla</span>
+                    <br>
+                    <span class="ingredients">Pollo, lechuga, jitomate, cebolla, Queso Oaxaca</span>
+                    <br>
+                    <span class="price">$50</span>
+                </li>
+                <li>
+                    <span class="product-name">Myketyson</span>
+                    <br>
+                    <span class="ingredients">Doble carne, jamón, jitomate, cebolla, tocino, aros de cebolla, Queso amarillo</span>
+                    <br>
+                    <span class="price">$60</span>
+                </li>
+                <li>
+                    <span class="product-name">Quesobadon</span>
+                    <br>
+                    <span class="ingredients">Carne, jamón, jitomate, cebolla, lechuga, Queso Oaxaca, Queso amarillo, Queso manchego</span>
+                    <br>
+                    <span class="price">$60</span>
+                </li>
+                <li>
+                    <span class="product-name">La pecosa</span>
+                    <br>
+                    <span class="ingredients">Carne, Peperoni, Queso mozarrela, salsa de jitomate, cebolla, lechuga</span>
+                    <br>
+                    <span class="price">$70</span>
+                </li>
+                <li>
+                    <span class="product-name">Aloha</span>
+                    <br>
+                    <span class="ingredients">Carne, piña, Queso oaxaca, jamón, cebolla, jitomate, lechuga</span>
+                    <br>
+                    <span class="price">$60</span>
+                </li>
+            </ul>
+            <div class="menu-images">
+                <img src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png" alt="Hamburguesa 1">
+                <img src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/recetas-fruco-bbq/Hamburguesa-Texana-1200x709.jpg" alt="Hamburguesa 2">
+                <img src="https://cdn-3.expansion.mx/dims4/default/bb7cebe/2147483647/strip/true/crop/1254x836+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F42%2F17%2F0ea4fcc94ebc8ca0c51d0f153345%2Fpromociones-dia-de-la-hamburguesa.jpg" alt="Hamburguesa 3">
+             </div>
+        </div>
+        <div class="menu-section">
+            <h3>Hot Dogs</h3>
+            <ul>
+                <li>
+                    <span class="product-name">La sin hueso</span>
+                    <br>
+                    <span class="ingredients">Salchicha, mayonesa, catsup, mostaza, jitomate, cebolla</span>
+                    <br>
+                    <span class="price">$45</span>
+                </li>
+                <li>
+                    <span class="product-name">Que salchichón</span>
+                    <br>
+                    <span class="ingredients">Salchicha, tocino, jamón, Queso Oaxaca, jitomate, cebolla</span>
+                    <br>
+                    <span class="price">$65</span>
+                </li>
+                <li>
+                    <span class="product-name">Que sobadita</span>
+                    <br>
+                    <span class="ingredients">Salchicha, Queso Oaxaca, Queso manchego, Queso amarillo</span>
+                    <br>
+                    <span class="price">$65</span>
+                </li>
+                <li>
+                    <span class="product-name">Pizza dog</span>
+                    <br>
+                    <span class="ingredients">Salchicha, jamón, Queso mozarrella, Peperoni</span>
+                    <br>
+                    <span class="price">$65</span>
+                </li>
+            </ul>
+            <div class="menu-images">
+                <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/712f530/2147483647/strip/true/crop/1024x1024+0+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F69%2F9b%2Fb46e99b242069e53bd9c7df70236%2Fhot-dogs.jpg" alt="Hot Dog 1">
+                <img src="https://www.eluniversal.com.mx/resizer/2nAU381qBQfzobvbow9xMi6RSyE=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/ECM7VBFGTREVHHAZIK4EOJLNME.jpg" alt="Hot Dog 2">
+            </div>
+        </div>
+        <div class="menu-section">
+            <h3>Papas a la Francesa</h3>
+            <ul>
+                <li>
+                    <span class="product-name">Orden de papas</span>
+                    <br>
+                    <span class="ingredients">Con Queso amarillo al gusto</span>
+                    <br>
+                    <span class="price">$35</span>
+                </li>
+            </ul>
+            <div class="menu-images">
+                <img src="https://puertofresco.com/cdn/shop/products/patatas-onduladas.jpg?v=1593107920" alt="Papas Fritas">
+            </div>
+        </div>
+        <div class="menu-section">
+            <h3>Bebidas</h3>
+            <ul>
+                <li>
+                    <span class="product-name">Coca Cola 600ml</span>
+                    <br>
+                    <span class="ingredients">Coca Cola</span>
+                    <br>
+                    <span class="price">$25</span>
+                </li>
+                <li>
+                    <span class="product-name">Boing 500ml</span>
+                    <br>
+                    <span class="ingredients">Boing</span>
+                    <br>
+                    <span class="price">$25</span>
+                </li>
+            </ul>
+            <div class="menu-images">
+                <img src="https://thefoodtech.com/wp-content/uploads/2023/04/Cocacola.-latin.jpg" alt="Coca Cola">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-363fb40d4f5bcc9fa438e8dc7d3cf8d8-lq" alt="Boing">
+            </div>
+        </div>
+    </section>
+    <section id="ordenar">
+        <h2>Ordenar</h2>
+        <form action="changada.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="order">Orden:</label>
+            <textarea id="order" name="order" rows="4" required></textarea>
+
+            <button type="submit">Enviar Orden</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="contacto.php" method="POST">
+            <label for="contact-name">Nombre:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 La Changada. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
